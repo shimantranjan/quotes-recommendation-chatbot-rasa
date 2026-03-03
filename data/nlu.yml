@@ -1,0 +1,30 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+
+- intent: motivation_quote
+  examples: |
+    - motivate me
+    - give me motivation
+    - motivation quote
+
+- intent: love_quote
+  examples: |
+    - love quote
+    - give me love quote
+    - romantic quote
+
+- intent: success_quote
+  examples: |
+    - success quote
+    - give me success quote
+
+- intent: funny_quote
+  examples: |
+    - make me laugh
+    - funny quote

@@ -1,0 +1,22 @@
+version: "3.1"
+
+intents:
+  - greet
+  - motivation_quote
+  - love_quote
+  - success_quote
+  - funny_quote
+
+responses:
+  utter_greet:
+    - text: "Hello! What type of quote do you need today?"
+
+actions:
+  - action_motivation_quote
+  - action_love_quote
+  - action_success_quote
+  - action_funny_quote
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
