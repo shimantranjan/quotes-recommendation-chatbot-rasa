@@ -6,10 +6,18 @@ intents:
   - love_quote
   - success_quote
   - funny_quote
+  - goodbye
+  - thank_you
 
 responses:
   utter_greet:
     - text: "Hello! What type of quote do you need today?"
+  utter_default:
+    - text: "Sorry, I didn't understand that. You can ask me for love or motivation quotes."
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+  utter_thank_you:
+    - text: "You're welcome!"
 
 actions:
   - action_motivation_quote

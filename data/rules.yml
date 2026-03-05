@@ -1,0 +1,42 @@
+version: "3.1"
+
+rules:
+  - rule: Respond to greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Provide motivation quote
+    steps:
+      - intent: motivation_quote
+      - action: action_motivation_quote
+
+  - rule: Provide love quote
+    steps:
+      - intent: love_quote
+      - action: action_love_quote
+
+  - rule: Provide success quote
+    steps:
+      - intent: success_quote
+      - action: action_success_quote
+
+  - rule: Provide funny quote
+    steps:
+      - intent: funny_quote
+      - action: action_funny_quote
+
+  - rule: Respond to goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Respond to thank you
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+
+  - rule: Fallback rule for unknown input
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default

@@ -6,25 +6,100 @@ nlu:
     - hi
     - hello
     - hey
+    - good morning
+    - good afternoon
+    - howdy
+    - hey there
+    - hello human
+    - hi bot
+    - greetings
+    - what's up
+    - hi sweetheart
+    - hey mate
 
 - intent: motivation_quote
   examples: |
     - motivate me
     - give me motivation
     - motivation quote
+    - i need some motivation
+    - inspire me
+    - give me an inspirational quote
+    - i feel down, cheer me up
+    - motivating words please
+    - say something inspiring
+    - i need a push today
+    - give me a burst of energy
+    - share a motivational saying
+    - tell me something to keep me going
 
 - intent: love_quote
   examples: |
     - love quote
     - give me love quote
     - romantic quote
+    - i want a quote about love
+    - tell me something romantic
+    - share a love saying
+    - sweetheart quote
+    - quote for my partner
+    - romantic words please
+    - feeling lovely give me a quote
+    - something sweet and romantic
+    - love and relationships quote
+    - tell me about love
 
 - intent: success_quote
   examples: |
     - success quote
     - give me success quote
+    - i need a quote about success
+    - tell me something successful
+    - share a quote on achieving success
+    - how to be successful
+    - words for success
+    - give me a quote on reaching my goals
+    - tell me about winning
+    - success and ambition quote
+    - what is the secret to success
+    - i want to hear a quote on succeeding
 
 - intent: funny_quote
   examples: |
     - make me laugh
     - funny quote
+    - tell me a joke
+    - give me a funny quote
+    - i need a good laugh
+    - say something hilarious
+    - share a humor quote
+    - make me smile
+    - something funny, please
+    - tell me something amusing
+    - i want a humorous saying
+    - laugh out loud quote
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - catch you later
+    - cya
+    - bye bye
+    - have a good one
+    - i'm leaving now
+    - talk to you soon
+    - farewell
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - thanks a lot
+    - thank you so much
+    - nice one thanks
+    - thanks for the quote
+    - you are helpful thanks
+    - thanks bot

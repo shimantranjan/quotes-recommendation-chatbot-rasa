@@ -1,0 +1,137 @@
+/* Full Page Styling */
+.stApp {
+    background: linear-gradient(135deg, #6a5acd, #9b59b6);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Glassmorphism Card for Landing Page */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* Typography */
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-title {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Big Start Button */
+div.stButton > button.start-btn {
+    background: white;
+    color: #6a5acd;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+div.stButton > button.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    color: #9b59b6;
+    border: none;
+}
+
+/* Category Cards */
+.category-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+.category-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ----- CHATBOT UI ----- */
+/* White container for chat */
+.chat-container {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    color: #333;
+}
+
+.chat-header {
+    text-align: center;
+    color: #6a5acd;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* Streamlit overrides for Chat */
+.stChatMessage {
+    background: transparent !important;
+}
+
+/* User Message Bubble (Right, Blue) */
+div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) {
+    flex-direction: row-reverse;
+}
+div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) div[data-testid="stMarkdownContainer"] {
+    background: #0078FF;
+    color: white;
+    padding: 1rem 1.2rem;
+    border-radius: 20px 20px 2px 20px;
+    display: inline-block;
+    max-width: 80%;
+}
+/* Ensure text inside user bubble is white */
+div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) div[data-testid="stMarkdownContainer"] p {
+    color: white !important;
+    margin: 0;
+}
+
+/* Bot Message Bubble (Left, Grey) */
+div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-assistant"]) div[data-testid="stMarkdownContainer"] {
+    background: #F1F0F0;
+    color: #333;
+    padding: 1rem 1.2rem;
+    border-radius: 20px 20px 20px 2px;
+    display: inline-block;
+    max-width: 80%;
+    border: 1px solid #e0e0e0;
+}
+div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-assistant"]) div[data-testid="stMarkdownContainer"] p {
+    color: #333 !important;
+    margin: 0;
+}
+
+/* Hide annoying base Streamlit elements if needed */
+footer {visibility: hidden;}
+#MainMenu {visibility: hidden;}
