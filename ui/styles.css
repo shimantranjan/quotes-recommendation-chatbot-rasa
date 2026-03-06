@@ -37,7 +37,7 @@
 }
 
 /* Big Start Button */
-div.stButton > button.start-btn {
+div.stButton>button.start-btn {
     background: white;
     color: #6a5acd;
     font-size: 1.2rem;
@@ -49,7 +49,7 @@ div.stButton > button.start-btn {
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
 
-div.stButton > button.start-btn:hover {
+div.stButton>button.start-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
     color: #9b59b6;
@@ -65,10 +65,12 @@ div.stButton > button.start-btn:hover {
     text-align: center;
     transition: transform 0.3s ease;
 }
+
 .category-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.1);
 }
+
 .category-icon {
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -103,6 +105,7 @@ div.stButton > button.start-btn:hover {
 div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) {
     flex-direction: row-reverse;
 }
+
 div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) div[data-testid="stMarkdownContainer"] {
     background: #0078FF;
     color: white;
@@ -111,6 +114,7 @@ div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) div
     display: inline-block;
     max-width: 80%;
 }
+
 /* Ensure text inside user bubble is white */
 div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) div[data-testid="stMarkdownContainer"] p {
     color: white !important;
@@ -127,11 +131,17 @@ div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-assistant"]
     max-width: 80%;
     border: 1px solid #e0e0e0;
 }
+
 div[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-assistant"]) div[data-testid="stMarkdownContainer"] p {
     color: #333 !important;
     margin: 0;
 }
 
 /* Hide annoying base Streamlit elements if needed */
-footer {visibility: hidden;}
-#MainMenu {visibility: hidden;}
+footer {
+    visibility: hidden;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
